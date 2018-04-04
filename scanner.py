@@ -8,8 +8,9 @@
 
 import argparse, sys, requests, time, threading
 if sys.version[0]=="3": raw_input=input
-parser = argparse.ArgumentParser(description='Process some integers.')
-parser.add_argument('-f', help='Config file.', required=True)
+parser = argparse.ArgumentParser(add_help=False)
+parser.add_argument('-h', action='help', default=argparse.SUPPRESS, help='Shows this help message.')
+parser.add_argument('-f', help='Selects a configuration file.', metavar='<FILE>', required=True)
 args = parser.parse_args()
 arrayList = []
 with open(args.f, 'r') as f:
@@ -79,7 +80,7 @@ spinner = Spinner()
 alive = requests.Session()
 alive.max_redirects = 2
 while True:
-    website = ('http://www.' + raw_input('URL: http://www.'))
+    website = ('http://www.' + raw_input('URL: http://www.') + '/')
     try:
         res = alive.get(website, timeout = 2)
         res.status_code == 200
