@@ -7,6 +7,7 @@
 #############################################################################
 
 import argparse, sys, requests, time, threading
+if sys.version[0]=="3": raw_input=input
 parser = argparse.ArgumentParser(description='Process some integers.')
 parser.add_argument('-f', help='Config file.', required=True)
 args = parser.parse_args()
