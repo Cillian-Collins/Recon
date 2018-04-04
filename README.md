@@ -13,19 +13,19 @@ The Recon scanning tool scans websites for open files &amp; directories specifie
 ## Installing
 To get the project started, you will need to setup pip or an alternative package manager.
 To install the necessary modules, listed above, please do the following commands:
-```sh
+```
 $ pip install argparse
 ```
-```sh
+```
 $ pip install sys
 ```
-```sh
+```
 $ pip install requests
 ```
-```sh
+```
 $ pip install time
 ```
-```sh
+```
 $ pip install threading
 ```
 
