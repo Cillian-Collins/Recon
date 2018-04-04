@@ -2,7 +2,7 @@
 The Recon scanning tool scans websites for open files &amp; directories specified in the custom config file. Default server configuration files, open directories and other potentially harmful files can be found using this scanning tool. Use with permission of website administrator only.
 
 ## Requirements
-* Python 3.x is required for this project. It will not run on 2.x without making appropriate changes to the syntax.
+* Python is required for this project. It will run on all Python versions, including 2.x and 3.x without any issues.
 * Pip (or a similar alternative) is require to install necessary packages.
 * Argparse is required in order to accept command-line arguments.
 * Sys is required in order to accept command-line arguments and is also used for the loading icon.
